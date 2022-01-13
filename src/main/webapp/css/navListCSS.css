@@ -1,0 +1,26 @@
+.navList ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background:url("../images/system/bg/木板背景图.png") no-repeat;
+    background-size: cover;
+}
+
+.navList li a {
+    display: block;
+    color: white;
+    /*设置宽高*/
+    padding: 30px 16px;
+    text-decoration: none;
+    text-align: center;
+    background:url("../images/system/bg/提示悬浮栏1.png") no-repeat;
+    background-size: cover;
+}
+
+.navList li a:hover {
+    /*background-color: #555;*/
+    /*color: white;*/
+    font-size: 1.2em;
+}
+

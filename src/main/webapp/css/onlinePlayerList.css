@@ -1,0 +1,51 @@
+#onlinePlayerBox {
+    background: url("../images/system/bg/表单模板背景图.png");
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    bottom: 10px;
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    list-style: none;
+    overflow: auto;
+}
+
+#onlinePlayerList .playerItem {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+    width: 100%;
+    flex: 1;
+}
+
+#onlinePlayerList .playerItem span {
+    flex: 1;
+    padding: 5px;
+}
+
+#onlinePlayerList .playerItem input {
+    flex: 2;
+    padding: 5px;
+}
+
+#onlinePlayerList .inputArea input {
+    margin: 5px;
+}
+
+#onlinePlayerList input {
+    border-color: #823F1D;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-width: 1px;
+}
+
+#onlinePlayerList img {
+    text-align: center;
+    border-radius: 10px;
+    max-height: 100%;
+    max-width: 100%;
+}

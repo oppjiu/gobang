@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*底板*/
+#backgroundBox {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/*标题*/
+#header {
+    min-height: 300px;
+    height: 300px;
+    /*background: #1abc9c;*/
+    background: url("../images/system/bg/五子棋.png");
+    background-size: cover;
+}
+
+/*顶部导航栏*/
+#navbarTop {
+    display: flex;
+    background-color: #333333;
+}
+
+/*设置导航条链接演示*/
+#navbarTop a {
+    color: white;
+    /*控制顶部导航栏高度和间隔*/
+    padding: 10px 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/*更改鼠标悬停时的颜色*/
+#navbarTop a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*靠左的导航栏*/
+#navbarLeft {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/*靠右的导航栏*/
+#navbarRight {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/*顶部导航栏中的文字和图片按钮*/
+.textAndImage {
+    display: flex;
+}
+
+/*主体*/
+#main {
+    flex: 10;
+    display: flex;
+    /*主体内容区域 禁止浏览器出现滚动条*/
+    overflow: hidden;
+}
+
+/*底部*/
+#footer {
+    flex: 1;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #DDDDDD;
+}
+
+/*主体内左侧导航栏*/
+#sideNavbar {
+    min-width: 120px;
+    /*可在内容溢出时显示滚动条*/
+    height: 100%;
+    overflow: auto;
+}
+
+/*主体内容和包裹iframe*/
+#centerBox {
+    flex: 1;
+    display: flex;
+    background: url("../images/system/bg/五子棋底.png");
+    background-size: cover;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+}
+
+/*---------------------------------------
+
+                玩家信息表单
+
+-----------------------------------------*/
+
+#infoBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /*background-color: #4CAF50;*/
+    background: url("../images/system/bg/木板背景图.png");
+    width: 160px;
+    padding: 5px;
+}
+
+#infoBoxTop {
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+#infoBoxBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+
+.infoBoxItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5px;
+}
+
+.infoBoxItem span {
+    flex: 1;
+    white-space: nowrap;
+}
+
+#infoBoxHeadIcon {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.infoBoxItem img {
+    width: 20px;
+    height: 20px;
+}

@@ -1,0 +1,257 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../images/system/bg/木板背景图.png") no-repeat;
+    background-size: cover;
+}
+
+/*---------------------------------------
+                游戏表单
+-----------------------------------------*/
+/*表单*/
+.gameForm {
+    position: relative;
+    /*background-color: #EBBE8E;*/
+    background: url("../images/system/bg/表单模板背景图.png");
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+    width: 420px;
+    height: 240px;
+}
+
+/*表单分为三个区块*/
+.gameFormLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+.gameFormCenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 2;
+}
+
+.gameFormRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+}
+
+/*头像*/
+.playerOneHeadIcon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    flex: 3;
+}
+
+.playerTwoHeadIcon {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+    flex: 3;
+}
+
+/*文字和等级类*/
+.gameForm-item {
+    padding: 5px;
+    flex: 1;
+}
+
+.gameBtnBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+    padding: 10px;
+}
+
+.gameBtnBar input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-color: #823F1D;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-width: 1px;
+}
+
+.timeCount {
+    /*设置背景图片的大小*/
+    min-width: 150px;
+    min-height: 150px;
+    background-size: 150px 150px;
+    border-radius: 25px;
+    padding: 10px;
+
+    /*设置字体位置*/
+    text-align: center;
+    font-size: 30px;
+    color: white;
+    flex: 1;
+}
+
+.deleteIcon {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: -15px;
+    top: -15px;
+}
+
+/*---------------------------------------
+            主页表单flex布局
+-----------------------------------------*/
+
+#gameBox {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    padding: 10px;
+}
+
+#gameBox li {
+    padding: 10px;
+    text-align: center;
+}
+
+/*---------------------------------------
+        弹窗已经点击block的CSS代码
+-----------------------------------------*/
+
+/*jquery.leanModal弹窗关闭按钮*/
+.popBoxCloseBtn {
+    background: url("../images/system/popBoxCloseBtn.png") repeat scroll 0 0 transparent;
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 14px;
+    right: 10px;
+    top: 10px;
+}
+
+#lean_overlay {
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000000;
+    display: none;
+}
+
+/*点击block*/
+.createGameTable {
+    position: relative;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    width: 420px;
+    height: 240px;
+    background-image: url("../images/system/clickToMakeGameBg.png");
+}
+
+.createGameBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+    background-size: 100px 100px;
+    background-image: url("../images/system/clickToMakeGame.png");
+}
+
+/*游戏参数设置弹窗表单*/
+.startGameTimeForm {
+    /*background-color: #EBBE8E;*/
+    background: url("../images/system/bg/表单模板背景图.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.timeTop {
+    flex: 1;
+    margin: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    color: white;
+}
+
+.timeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 9;
+    margin: 10px;
+    width: 100%;
+}
+
+.timeContent-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+}
+
+.timeContent label {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    color: white;
+    border-color: #823F1D;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-width: 1px;
+    flex: 1;
+}
+
+.timeContent input {
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-color: #823F1D;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-width: 1px;
+    flex: 1;
+}
+
+.timeContent select {
+    height: 30px;
+    width: 100px;
+    padding: 5px;
+    border-color: #823F1D;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-width: 1px;
+    flex: 1;
+}
+
+@font-face {
+    font-family: timeFont;
+    src: url("../fonts/LcdD.TTF");
+}
+
+

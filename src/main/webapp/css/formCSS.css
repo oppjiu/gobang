@@ -1,0 +1,192 @@
+/*---------------------------------------
+
+        用于登录、注册和个人信息表单
+
+-----------------------------------------*/
+.form {
+    display: flex;
+    /*background-color: #EBBE8E;*/
+    background: url("../images/system/bg/表单模板背景图.png");
+    width: 300px;
+    padding: 10px;
+    grid-gap: 10px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 5px 5px 5px 5px;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/*照片*/
+.form-top {
+    flex: 1;
+    text-align: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
+}
+
+/*表单的下部分*/
+.form-bottom {
+    width: 100%;
+    display: grid;
+    grid-gap: 10px;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+.form-bottom-item {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+/*form-bottom-item的子元素*/
+.item1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.item2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.item3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.item4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.item5 {
+    grid-column: 1;
+    grid-row: 5;
+}
+
+.item6 {
+    grid-column: 1;
+    grid-row: 6;
+}
+
+.change-area {
+    display: grid;
+    grid-gap: 10px;
+    height: 100%;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    flex: 2;
+}
+
+.changePwd-item1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.changePwd-item2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.changePwd-item3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.changeInfo-item1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.changeInfo-item2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.changeInfo-item3 {
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.changeInfo-item4 {
+    grid-column: 1;
+    grid-row: 4;
+}
+
+.changeImg-item1 {
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.changeImg-item2 {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.changePwd {
+    display: none;
+}
+
+.changeInfo {
+    display: grid;
+}
+
+.changeImg {
+    display: none;
+}
+
+.uploadFile {
+    width: 100%;
+}
+
+.chancelBtn {
+    display: none;
+}
+
+/*设置头像的高度*/
+.form-top img {
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    /*border-color: #823F1D;*/
+    /*box-sizing: border-box;*/
+    /*border-width: 10px;*/
+}
+
+.form input {
+    flex: 2;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-color: #823F1D;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-width: 1px;
+}
+
+.form select {
+    flex: 2;
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    border-color: #823F1D;
+    border-radius: 5px;
+    box-sizing: border-box;
+    border-width: 1px;
+}
+
+/*form-bottom-item子元素中的表单*/
+.form label {
+    color: white;
+    flex: 1;
+    width: 100%;
+}
