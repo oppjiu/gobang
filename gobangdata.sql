@@ -1,4 +1,4 @@
-create database test_gobang;
+create database restful_gobang;
 use restful_gobang;
 
 create table if not exists t_users
