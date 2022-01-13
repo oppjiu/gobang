@@ -25,8 +25,11 @@ gobang web game using the restful 基于Restful风格的网页版五子棋多人
 > 项目相关技术有ajax websocket resteasy hibernate-jpa mysql/damengDatabase
 
 后端框架：resteasy
+
 前端：jQuery
+
 持久化存储：hibernate-jpa
+
 数据库：达梦数据库或者mysql数据库
 
 ## 附件
