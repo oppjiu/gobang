@@ -1,6 +1,8 @@
 # Gobang Web Game（网页版五子棋）
 gobang web game using the restful 基于Restful风格的网页版五子棋多人对战
 
+*本项目暂未开发完成*
+
 ## 功能
 
 1. 玩家登录、注册、登出
@@ -14,7 +16,10 @@ gobang web game using the restful 基于Restful风格的网页版五子棋多人
    可悔棋、认输、平局
 
 5. 观棋
+
 6. 对局复盘
+
+7. 待开发...
 
 ## 相关技术
 > 项目相关技术有ajax websocket resteasy hibernate-jpa mysql/damengDatabase
